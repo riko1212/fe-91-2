@@ -35,7 +35,7 @@
           </a>
           <ul class="header-menu list">
             <li class="header-menu-item">
-              <a class="header-menu-link" href="#home">Home</a>
+              <a class="header-menu-link deswfeqrwf" href="#home">Home</a>
             </li>
             <li class="header-menu-item">
               <a class="header-menu-link" href="./portfolio.html"
@@ -56,8 +56,11 @@
               aria-label="instagram"
               target="_blank"
               rel="noopener noreferrer"
-              >insta</a
             >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
           </li>
           <li class="header-soc-item">
             <a
@@ -66,8 +69,11 @@
               aria-label="twitter"
               target="_blank"
               rel="noopener noreferrer"
-              >twit</a
             >
+              <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
           </li>
         </ul>
       </div>
@@ -81,9 +87,18 @@
             of pure delight!
           </h1>
           <div class="hero-buttons">
-            <button type="button" class="hero-btn">Buy now</button>
+            <button type="button" class="hero-btn" data-modal-open>
+              Buy now
+            </button>
             <a href="#made" class="hero-link">How it’s made</a>
-            <a href="#footer" class="hero-scroll-link">scroll down</a>
+            <a href="#footer" class="hero-scroll-link"
+              >scroll down
+              <span>
+                <svg class="hero-scroll-icon" width="22" height="22">
+                  <use href="./images/icons.svg#icon-angle"></use>
+                </svg>
+              </span>
+            </a>
           </div>
         </div>
       </section>
@@ -93,6 +108,11 @@
           <h2 hidden>Benefits</h2>
           <ul class="benefits-list">
             <li class="benefits-item">
+              <div class="benefits-item-block">
+                <svg class="benefits-item-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-chocolate-bar"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Unsurpassed taste</h3>
               <p class="benefits-item-text">
                 Crafted with the finest quality cocoa beans and a dedication to
@@ -102,6 +122,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-item-block">
+                <svg class="benefits-item-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-coin"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Affordable price</h3>
               <p class="benefits-item-text">
                 Indulge in high-quality chocolate without breaking the bank with
@@ -112,6 +137,11 @@
               </p>
             </li>
             <li class="benefits-item">
+              <div class="benefits-item-block">
+                <svg class="benefits-item-icon" width="32" height="32">
+                  <use href="./images/icons.svg#icon-spoon"></use>
+                </svg>
+              </div>
               <h3 class="benefits-subtitle">Own production</h3>
               <p class="benefits-item-text">
                 We take pride in our own production process, ensuring that every
@@ -139,6 +169,16 @@
             <li class="products-item">
               <img src="./images/kisspng-milk-1.png" alt="piece of chocolate" />
               <h3 class="products-subtitle light">MILK CHOCOLATE</h3>
+              <div class="products-cover-block">
+                <p class="products-cover-title">Milk chocolate</p>
+                <p class="products-cover-text">
+                  Milk chocolate is a solid chocolate confectionery containing
+                  cocoa, sugar and milk. It is the most consumed type of
+                  chocolate. Chocolate was originally sold and consumed as a
+                  beverage in pre-Columbian times. Although four-fifths of all
+                  milk chocolate is sold in the United States and Europe.
+                </p>
+              </div>
             </li>
             <li class="products-item">
               <img src="./images/kisspng-milk-2.png" alt="bottle of milk" />
@@ -219,12 +259,13 @@
           </h2>
           <ul class="loved-list">
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-1.jpeg"
                 alt="Victoria Dobrzhanska photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -232,12 +273,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-2.jpeg"
                 alt="Nazar Babenko photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -246,12 +288,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-3.jpeg"
                 alt="Olena Kampusch photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -260,12 +303,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-1.jpeg"
                 alt="Victoria Dobrzhanska photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
               <p class="loved-item-text">
                 I love this chocolate bar. Perfect combination of light crispy
@@ -273,12 +317,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-2.jpeg"
                 alt="Nazar Babenko photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Nazar Babenko</h3>
               <p class="loved-item-text">
                 This chocolate confection is a delight! A delight! The wafer is
@@ -287,12 +332,13 @@
               </p>
             </li>
             <li class="loved-item">
-              <!-- <img
+              <img
                 src="./images/loved-3.jpeg"
                 alt="Olena Kampusch photo"
                 width="80"
                 height="80"
-              /> -->
+                class="loved-image"
+              />
               <h3 class="loved-subtitle">Olena Kampusch</h3>
               <p class="loved-item-text">
                 Chocolate is a family favourite treat. Love the delicious smooth
@@ -347,5 +393,11 @@
         </nav>
       </div>
     </footer>
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="modal-btn" data-modal-close>x</button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
