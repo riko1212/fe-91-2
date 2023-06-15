@@ -393,9 +393,80 @@
         </nav>
       </div>
     </footer>
-    <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop" data-modal>
       <div class="modal">
-        <button type="button" class="modal-btn" data-modal-close>x</button>
+        <button type="button" class="modal-btn" data-modal-close>
+          <svg class="modal-btn-icon" width="28" height="28">
+            <use href="./images/icons.svg#icon-close"></use>
+          </svg>
+        </button>
+        <p class="modal-title section-title">
+          LEAVE A REVIEW ABOUT <span>OUR CHOCOLATE</span>
+        </p>
+        <form class="modal-form">
+          <div class="modal-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="text"
+                name="user-name"
+                id="user-name"
+                class="modal-input"
+                required
+                placeholder="Степан"
+                minlength="2"
+              />
+              <svg class="input-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-user"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="modal-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal-input"
+              placeholder="bandera@gmail.com"
+            />
+          </div>
+          <div class="modal-field">
+            <input
+              type="tel"
+              name="user-tel"
+              class="modal-input"
+              required
+              placeholder="+380 (96) 111-11-11"
+            />
+          </div>
+          <div class="modal-field">
+            <textarea
+              name="modal-text"
+              placeholder="Enter text"
+              class="modal-textarea"
+            ></textarea>
+          </div>
+          <div class="modal-field">
+            <input
+              type="checkbox"
+              name="policy"
+              id="policy"
+              class="input-check visually-hidden"
+              value="true"
+            />
+            <label for="policy" class="check-text">
+              <span>
+                <svg class="check-icon" width="10" height="10">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a href="">Privacy Policy</a>
+            </label>
+          </div>
+          <button type="submit" class="modal-send-btn">Send</button>
+        </form>
       </div>
     </div>
     <script src="./js/modal.js"></script>
