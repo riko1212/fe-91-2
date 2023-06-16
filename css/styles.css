@@ -633,6 +633,54 @@ img {
   color: #ffffff;
 }
 
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-form {
+  display: flex;
+}
+
+.footer-input {
+  width: 313px;
+  height: 52px;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  border-radius: 30px;
+  background-color: transparent;
+  color: #eceded;
+  padding-left: 24px;
+  margin-right: 8px;
+}
+
+.footer-input::placeholder {
+  font-size: 18px;
+  line-height: 1.22;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-btn {
+  min-width: 137px;
+  height: 52px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #ffffff;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
 .backdrop {
   position: fixed;
   top: 0;
