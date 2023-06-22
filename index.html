@@ -20,6 +20,7 @@
       referrerpolicy="no-referrer"
     />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/media.css" />
   </head>
   <body>
     <header class="header">
@@ -72,6 +73,55 @@
               rel="noopener noreferrer"
             >
               <svg class="header-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-twitter"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <button type="button" class="open-menu-btn" data-menu-open>O</button>
+      </div>
+      <div class="mob-menu is-hidden" data-menu>
+        <div>
+          <button type="button" class="close-menu-btn" data-menu-close>
+            X
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link deswfeqrwf" href="#home">Home</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="./portfolio.html"
+                >How it’s made?</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link" href="#loved">Chocolate is loved</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="mob-menu-soc">
+          <li class="mob-menu-soc-item">
+            <a
+              class="mob-menu-soc-link"
+              href=""
+              aria-label="instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-menu-soc-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="mob-menu-soc-item">
+            <a
+              class="mob-menu-soc-link"
+              href=""
+              aria-label="twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="mob-menu-soc-icon" width="24" height="24">
                 <use href="./images/icons.svg#icon-twitter"></use>
               </svg>
             </a>
@@ -168,7 +218,14 @@
           </p>
           <ul class="products-list">
             <li class="products-item">
-              <img src="./images/kisspng-milk-1.png" alt="piece of chocolate" />
+              <img
+                srcset="
+                  ./images/kisspng-milk-1.png    1x,
+                  ./images/kisspng-milk-1-2x.png 2x
+                "
+                src="./images/kisspng-milk-1.png"
+                alt="piece of chocolate"
+              />
               <h3 class="products-subtitle light">MILK CHOCOLATE</h3>
               <div class="products-cover-block">
                 <p class="products-cover-title">Milk chocolate</p>
@@ -303,57 +360,13 @@
                 crunchy.
               </p>
             </li>
-            <li class="loved-item">
-              <img
-                src="./images/loved-1.jpeg"
-                alt="Victoria Dobrzhanska photo"
-                width="80"
-                height="80"
-                class="loved-image"
-              />
-              <h3 class="loved-subtitle">Victoria Dobrzhanska</h3>
-              <p class="loved-item-text">
-                I love this chocolate bar. Perfect combination of light crispy
-                wafer, covered in a thin layer chocolate.
-              </p>
-            </li>
-            <li class="loved-item">
-              <img
-                src="./images/loved-2.jpeg"
-                alt="Nazar Babenko photo"
-                width="80"
-                height="80"
-                class="loved-image"
-              />
-              <h3 class="loved-subtitle">Nazar Babenko</h3>
-              <p class="loved-item-text">
-                This chocolate confection is a delight! A delight! The wafer is
-                light and crisp, the hazelnut cream is smooth, and the chocolate
-                is good.
-              </p>
-            </li>
-            <li class="loved-item">
-              <img
-                src="./images/loved-3.jpeg"
-                alt="Olena Kampusch photo"
-                width="80"
-                height="80"
-                class="loved-image"
-              />
-              <h3 class="loved-subtitle">Olena Kampusch</h3>
-              <p class="loved-item-text">
-                Chocolate is a family favourite treat. Love the delicious smooth
-                chocolate and the creaminess inside. The wafer is soft but
-                crunchy.
-              </p>
-            </li>
           </ul>
           <button type="button" class="loved-btn">Leave a review</button>
         </div>
       </section>
     </main>
 
-    <footer id="footer" class="footer">
+    <!-- <footer id="footer" class="footer">
       <div class="container">
         <div class="footer-top">
           <p class="footer-text">
@@ -411,7 +424,7 @@
           </form>
         </div>
       </div>
-    </footer>
+    </footer> -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" class="modal-btn" data-modal-close>
@@ -491,5 +504,6 @@
     </div>
 
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

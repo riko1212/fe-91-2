@@ -12,6 +12,3 @@
     refs.modal.classList.toggle('is-hidden');
   }
 })();
-
-const email = document.querySelector('#user-email');
-console.dir(email);
