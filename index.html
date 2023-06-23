@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/hamburgers/dist/hamburgers.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
       rel="stylesheet"
@@ -49,6 +52,11 @@
             </li>
           </ul>
         </nav>
+        <button class="hamburger hamburger--collapse" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
 
         <ul class="header-soc">
           <li class="header-soc-item">
@@ -78,12 +86,14 @@
             </a>
           </li>
         </ul>
-        <button type="button" class="open-menu-btn" data-menu-open>O</button>
+        <button type="button" class="open-menu-btn" data-menu-open>
+          <span></span>
+        </button>
       </div>
       <div class="mob-menu is-hidden" data-menu>
         <div>
           <button type="button" class="close-menu-btn" data-menu-close>
-            X
+            <span></span>
           </button>
           <ul class="mob-menu-list list">
             <li class="mob-menu-item">
